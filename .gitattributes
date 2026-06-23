@@ -1,0 +1,6 @@
+# Normalize line endings: stop the LF/CRLF warnings on Windows.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.duckdb binary
