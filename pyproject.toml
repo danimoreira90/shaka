@@ -1,0 +1,28 @@
+[project]
+name = "shaka"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "danimoreira90", email = "101526289+danimoreira90@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.43.36",
+    "pydantic>=2.13.4",
+]
+
+[project.scripts]
+shaka = "shaka:main"
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "moto>=5.2.2",
+    "pyright>=1.1.410",
+    "pytest>=9.1.1",
+    "ruff>=0.15.18",
+]
