@@ -8,3 +8,6 @@ character-based for the plain-text Sprint 0 slice.
 # Chunking (character-based for Sprint 0; revisit for token-based later).
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 100
+
+# Embedding (deterministic local bag-of-words feature hash for Sprint 0).
+EMBED_DIM = 64
